@@ -1,11 +1,13 @@
 # Stock_Price_Analysis
-Python program to perform stock price analysis
+Python program to perform stock price analysis using flask for web application development.
 
 Author: Siddhant Mahajani
 
-Main Program: main.py - Program to execute stock analysis.
-Input: Ticker symbol of the company whose stock needs to be analysed.
-Output: Visualised report of company's stock price.
+Main Program: app.py - Program to execute stock analysis.
+The application is executed on: http://localhost:7077/
+
+Input required: Ticker symbol of the company whose stock needs to be analysed.
+Output: Grapahical representation of the companies stock price.
 
 company.py - Program used to fetch Company Name of the Ticker submitted.
 
@@ -15,5 +17,6 @@ Libraries used:
 yfinance: Yahoo Finance library to get data about companies stocks.
 plotly: To visualise the data.
 pandas: To read data from csv and filter out results.
+flask: To get input from website and display graph on the browser
 
 To install the libraries use pip install <library_name> i.e. pip install pandas.

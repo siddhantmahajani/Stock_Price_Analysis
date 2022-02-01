@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Analysis</title>
+</head>
+<body>
+    <div align="center">
+        <form action="http://localhost:7077/" method="post">
+        <label for="tickerCode">Company Ticker Symbol: </label>
+        <input type="text" id="companyTickerCode" name="companyTickerCode" placeholder="Company Ticket Code">
+        <button type="submit">Analyse</button>
+    </form>
+    </div>
+    <div id='chart' class='chart'”>
+        <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+        <script type='text/javascript'>
+          var graphs = {{graphJSON | safe}};
+          Plotly.plot('chart',graphs,{});
+        </script>
+    </div>
+</body>
+</html>

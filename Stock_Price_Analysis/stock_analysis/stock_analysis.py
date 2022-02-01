@@ -32,4 +32,5 @@ def analyseStockForCompanyTickerCode(ticker, name):
     figure = obj.Figure(data=[obj.Candlestick(x=data['Date'], open=data['Open'],
                                               high=data['High'], low=data['Low'], close=data['Close'])])
     figure.update_layout(title=name, xaxis_rangeslider_visible=False)
-    figure.show()
+    return figure
+
