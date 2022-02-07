@@ -13,10 +13,10 @@ company.py - Program used to fetch Company Name of the Ticker submitted.
 
 stock_analysis.py - Program used to perform companies stock analysis and visualise result.
 
-Libraries used:
-yfinance: Yahoo Finance library to get data about companies stocks.
-plotly: To visualise the data.
-pandas: To read data from csv and filter out results.
-flask: To get input from website and display graph on the browser
+Libraries used:<br/>
+yfinance: Yahoo Finance library to get data about companies stocks.<br/>
+plotly: To visualise the data.<br/>
+pandas: To read data from csv and filter out results.<br/>
+flask: To get input from website and display graph on the browser<br/>
 
 To install the libraries use pip install <library_name> i.e. pip install pandas.
